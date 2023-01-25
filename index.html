@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="19.01_form.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+       <div class="sign_up">Sign Up</div>
+       <form class="form" id="form">
+        <label for="userName">First Name</label>
+        <input type="text" id="userName" maxlength="20" placeholder="Enter First Name">
+<p class="warning" id="warningForName"></p>
+
+<label for="userSurname">Last Name</label>
+<input type="text" id="userSurname" maxlength="20" placeholder="Enter Last Name">
+<p class="warning" id="warningForSurname"></p>
+
+<div class="genderContainer">
+    <div class="gender">Your Gender</div>
+    <input id="male" type="radio" name="gender" value="male">
+    <label for="male">male</label>
+    <input id="female" type="radio" name="gender" value="female">
+    <label for="female">female</label>
+</div>
+<label for="userAge">Your Age</label>
+            <input type="text" id="userAge" maxlength="3" placeholder="Enter Your Age">
+            <p class="warning" id="warningForAge"></p>
+
+            <div class="checkselect" id="warningsforAge">
+                <label><input type="checkbox" name="agree" id="checkbox" value="1" > I agree to the Terms of Use</label>
+            </div>
+
+            <button id="register-button" type="button" disabled>Register</button>
+        </form>
+
+
+
+    </main>
+    <script src="19.01_form.js"></script>
+</body>
+</html>
